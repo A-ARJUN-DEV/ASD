@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASD Engineering Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .banner {
+            text-align: center;
+            padding: 100px 20px;
+            margin-top: 80px;
+        }
+        .slider {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .btn {
+            background: #ff6600;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #cc5500;
+        }
+        section {
+            padding: 50px;
+            margin: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+    <script defer>
+        let index = 0;
+        function showSlides(n) {
+            let slides = document.querySelector('.slides');
+            let totalSlides = document.querySelectorAll('.slides img').length;
+            index = (index + n + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(-${index * 864}px)`;
+        }
+        setInterval(() => showSlides(1), 3000);
+    </script>
+</head>
+<body>
+    <header>
+        <h1>ASD Engineering Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#estimation">Estimation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="banner">
+        <h2>Welcome to ASD Engineering Services</h2>
+        <p>Providing high-quality steel detailing, estimation, and structural engineering solutions worldwide.</p>
+        <div class="slider">
+            <div class="slides">
+                <img src="home1.jpg" alt="Steel Detailing">
+                <img src="home2.jpg" alt="Industrial Project">
+                <img src="home3.jpg" alt="PEMB Structure">
+                <img src="home4.jpg" alt="PEMB Structure">
+            </div>
+        </div>
+        <p>With years of expertise in the steel industry, we ensure precision, durability, and cost-effective solutions for all types of projects. Our engineers are dedicated to providing exceptional service with advanced technology and innovation.</p>
+        <button class="btn">Learn More</button>
+    </section>
+    
+    <section id="about">
+        <h1>About Us</h1>
+		<h2>ASD ENGINEERING SERVICES</h2>
+		<h3>
+			ASD Engineering Services is a trusted name in the steel industry,delivering structural engineering and detailing solutions for various sectors.
+		</h3>
+		<p>
+			ASD (DETAILING ON TIME) is a leading & unique
+			engineering service company specialized in detailing,
+			and estimation Established in the year of 2020. We have
+			the expertise and the manpower to detail over 5,00,000
+			lbs of steel per month. For last 3 years, we have been
+			offering the service in following industry standards which
+			include AISC, CISC,AS to our clients all over the world.
+			We have a highly skilled professional team (Engineers)
+			that produce a complete steel package(shop drawings,erection drawings, etc). in customized formatsReports and other Files with customer  satisfaction.“With the highest level of accuracy, we strive to have  themost efficient shop drawings. “We are a young and unique firm  continuously evolvingand reshaping ourselves through our innovative  &distinct approach as we always strive to stay ahead ofthe rapidly  changing markets, advancing technologies and expanding client needs.
+		</p>
+        <img src="about.png" alt="">
+		<h3>
+			Do you know one thing about us, let it be that ASD will satisfy all of your unique and varied architectural & engineering needs with quality, On-time & within the budget because we believe it’s not only “About us” it’s “about you” as well.
+
+		</h3>
+    </section>
+    
+    <section id="services">
+        <h2>ASD ENGINEERING SERVICES</h2>
+		<h4>At ASD ENGINEERING we have an in-depth understanding of structural steel in industrial, commercial and oil and gas projects. This enables us to provide industry standard erection and shop drawings that can feed your shop floor in the formats of your choice. Our structural steel fabrication detailing team works closely with clients to ascertain and fulfill needs specific to projects of any size. Our steel fabrication detailing, team has experienced structural drafting resources and we make great efforts to ensure our deliverables meet the highest quality standards.</h4>
+		<img src="services.png" alt="Our Services">
+		<p><b>The areas of Structural Steel Modelling and drafting that our team has experience with are:</b></p>
+        <ul>
+            <li>Steel Detailing</li>
+            <li>Steel Estimation</li>
+            <li>3D Modelling & Shop Drawings</li>
+            <li>Pipe Support & Misc Structures</li>
+            <li>Pre-Engineered Metal Buildings (PEMB)</li>
+			<li>Material Take Offs (MTOS)</li>
+			<li>Advanced Bill of Material (ABM)</li>
+			<li>All Types of Steel Columns, Beams, Bracings and Trusses</li>
+			<li>All Type of Stairs and Ladders</li>
+			<li>All Type of Handrails and Guardrails Layouts and Details</li>
+			<li>Anchor Bolt Arrangement Plan</li>
+			<li>Concrete Embeds Layouts and Details</li>
+			<li>Gratings and Floor Plates Layouts and Details</li>
+			<li>Gratings and Floor Plates Layouts and Details</li>
+			<li>Gratings and Floor Plates Layouts and Details</li>
+			<li>Single Part Drawings/Gather Sheets Preparation</li>
+			<li>Pipe Rack Supporting Structures</li>
+			<li>Monorail/Crane Runway Supporting Structure</li>
+        </ul>
+        
+    </section>
+    
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="grid">
+            <img src="project1.jpg" alt="Project 1">
+            <img src="project2.jpg" alt="Project 2">
+            <img src="project3.jpg" alt="Project 3">
+			<p><b>At ASD, we are working as per the following principles for seamless detailing services. Understanding Project requirements and expected deliverables from the client. Start our work with the best possible solution. We allocate your project to a dedicated project manager who will handle all queries, scope of work and timeframe to increase productivity and decrease errors. We have a quality assurance team, prepares audit report with a marker to make sure all your feedback/comments/corrections would be picked up.
+			<b></p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong> +91 7708271064 | +1 647-939-6405</p>
+        <p><strong>Email:</strong> info@asdenggservices.com</p>
+		<p><strong>Address:</strong>
+		<br>6/26 ,Indhira Nagar, No 1 Tollgate,<br>
+		Trichy-621216321<br>
+		Rankin Avenue,<br>
+		Windsor,Ontario- N9B2R6
+		</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Inquiry</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 ASD Engineering Services. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
